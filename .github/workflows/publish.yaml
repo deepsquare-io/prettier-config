@@ -38,6 +38,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Publish the package to GitHub registry
         run: npm publish
         env:
