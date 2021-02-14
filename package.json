@@ -18,7 +18,9 @@
   "browser": false,
   "repository": "github:csquare-ai/prettier-config",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write !package-lock.json **/*.{js,json,yaml,md}",
+    "format:check": "prettier --check !package-lock.json **/*.{js,json,yaml,md}"
   },
   "dependencies": {},
   "devDependencies": {
