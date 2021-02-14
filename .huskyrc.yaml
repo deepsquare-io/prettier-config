@@ -1,0 +1,3 @@
+hooks:
+  commit-msg: standard-commithook
+  pre-commit: lint-staged
