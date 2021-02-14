@@ -18,7 +18,6 @@ Then, ensure that your `package.json` file contains the entry:
 
 ```json
 {
-  // rest of the package.json
   "prettier": "@csquare-ai/prettier-config"
 }
 ```
