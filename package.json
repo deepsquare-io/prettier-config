@@ -1,6 +1,6 @@
 {
   "name": "@csquare-ai/prettier-config",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "The csquare-ai enterprise-wide Prettier configuration.",
   "keywords": [
     "prettier",
