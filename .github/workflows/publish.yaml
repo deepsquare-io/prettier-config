@@ -39,6 +39,6 @@ jobs:
         with:
           node-version: '14'
       - name: Publish the package to GitHub registry
-        run: npm publish --dry-run
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
