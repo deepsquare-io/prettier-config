@@ -5,7 +5,7 @@ describe('Prettier configuration file', () => {
   it('should match the Prettier JSON schema', async () => {
     const schemav4 = await fetch('https://json.schemastore.org/prettierrc').then((r) => r.json());
     const schemav7 = {
-      ...JSON.parse(JSON.stringify(schemav4).replaceAll('"id"', '"$id"')),
+      ...JSON.parse(JSON.stringify(schemav4).replace(/"id"/, '"$id"')),
       $schema: 'http://json-schema.org/draft-07/schema#',
     };
     const config = require('./.prettierrc');
