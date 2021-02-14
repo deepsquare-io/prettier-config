@@ -16,10 +16,10 @@ npm install --dev @csquare-ai/prettier-config
 
 Then, ensure that your `package.json` file contains the entry:
 
-```json5
+```json
 {
   // rest of the package.json
-  prettier: '@csquare-ai/prettier-config',
+  "prettier": "@csquare-ai/prettier-config"
 }
 ```
 
