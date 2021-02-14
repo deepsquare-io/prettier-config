@@ -1,24 +1,26 @@
 {
   "name": "@csquare-ai/prettier-config",
   "version": "1.0.0",
-  "description": "The csquare-ai Prettier configuration.",
+  "description": "The csquare-ai enterprise-wide Prettier configuration.",
+  "keywords": [
+    "prettier",
+    "config",
+    "global"
+  ],
+  "homepage": "https://github.com/csquare-ai/prettier-config#readme",
+  "bugs": {
+    "url": "https://github.com/csquare-ai/prettier-config/issues",
+    "email": "matthieu@csquare.ai"
+  },
+  "license": "MIT",
+  "author": "Mathieu Bour <mathieu@csquare.ai> (https://github.com/mathieu-bour)",
   "main": ".prettierrc.js",
+  "browser": false,
+  "repository": "github:csquare-ai/prettier-config",
   "scripts": {
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/csquare-ai/prettier-config.git"
-  },
-  "keywords": [
-    "prettier"
-  ],
-  "author": "Mathieu Bour <mathieu@csquare.ai>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/csquare-ai/prettier-config/issues"
-  },
-  "homepage": "https://github.com/csquare-ai/prettier-config#readme",
+  "dependencies": {},
   "devDependencies": {
     "husky": "^5.0.9",
     "jest": "^26.6.3",
@@ -27,5 +29,8 @@
     "node-fetch": "^2.6.1",
     "prettier": "^2.2.1",
     "standard-commit": "^4.0.1"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }
