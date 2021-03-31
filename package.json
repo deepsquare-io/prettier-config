@@ -1,6 +1,6 @@
 {
   "name": "@csquare-ai/prettier-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The csquare-ai enterprise-wide Prettier configuration.",
   "keywords": [
     "prettier",
@@ -22,7 +22,9 @@
     "format": "prettier --write !package-lock.json **/*.{js,json,yaml,md}",
     "format:check": "prettier --check !package-lock.json **/*.{js,json,yaml,md}"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^2.0.2"
+  },
   "devDependencies": {
     "husky": "^4.3.8",
     "jest": "^26.6.3",

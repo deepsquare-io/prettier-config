@@ -1,5 +1,9 @@
 # Changelog
 
+## [Version 1.1.0 - Imports sorting](https://github.com/csquare-ai/prettier-config/releases/tag/1.1.0)
+
+- **feat**(plugins): use @trivago/prettier-plugin-sort-imports
+
 ## [Version 1.0.0 - Stable version](https://github.com/csquare-ai/prettier-config/releases/tag/1.0.0)
 
 This version has been validated as stable and can be used for production projects.
