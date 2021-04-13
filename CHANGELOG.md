@@ -1,5 +1,15 @@
 # Changelog
 
+## [Version 1.1.0 - Public release](https://github.com/csquare-ai/prettier-config/releases/tag/1.1.0)
+
+**BREAKING CHANGES**
+
+- **chore**(package): public release under `@csquare/prettier-config`
+
+**Chores**
+
+- **chore**(deps): bump Husky from v4 to v6
+
 ## [Version 1.1.0 - Imports sorting](https://github.com/csquare-ai/prettier-config/releases/tag/1.1.0)
 
 - **feat**(plugins): use @trivago/prettier-plugin-sort-imports
@@ -10,5 +20,5 @@ This version has been validated as stable and can be used for production project
 
 ## [Version 0.1.0 - Preview version](https://github.com/csquare-ai/prettier-config/releases/tag/0.1.0)
 
-This is the initial "engineering preview" version which might contains inconsistencies.
-Please be careful when integrating this version on our projects.
+This is the initial "engineering preview" version which might contains inconsistencies. Please be careful when
+integrating this version on our projects.

@@ -1,6 +1,6 @@
 {
-  "name": "@csquare-ai/prettier-config",
-  "version": "1.1.0",
+  "name": "@csquare/prettier-config",
+  "version": "1.1.1",
   "description": "The csquare-ai enterprise-wide Prettier configuration.",
   "keywords": [
     "prettier",
@@ -20,13 +20,14 @@
   "scripts": {
     "test": "jest",
     "format": "prettier --write !package-lock.json **/*.{js,json,yaml,md}",
-    "format:check": "prettier --check !package-lock.json **/*.{js,json,yaml,md}"
+    "format:check": "prettier --check !package-lock.json **/*.{js,json,yaml,md}",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^2.0.2"
   },
   "devDependencies": {
-    "husky": "^4.3.8",
+    "husky": "^6.0.0",
     "jest": "^26.6.3",
     "jest-json-schema": "^5.0.0",
     "lint-staged": "^10.5.4",
@@ -36,8 +37,5 @@
   },
   "engines": {
     "node": ">=8"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
