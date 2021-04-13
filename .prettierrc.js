@@ -11,4 +11,7 @@ module.exports = {
   jsxBracketSameLine: false,
   arrowParens: 'always',
   endOfLine: 'lf',
+
+  // @trivago/prettier-plugin-sort-import
+  importOrder: ['^react$', '^@.*$', '^[./]'],
 };

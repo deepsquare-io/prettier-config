@@ -1,6 +1,6 @@
 {
   "name": "@csquare/prettier-config",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "The csquare-ai enterprise-wide Prettier configuration.",
   "keywords": [
     "prettier",
@@ -14,6 +14,9 @@
   },
   "license": "MIT",
   "author": "Mathieu Bour <mathieu@csquare.ai> (https://github.com/mathieu-bour)",
+  "contributors": [
+    "Clarisse Tarrou <clarisse@csquare.ai> (https://github.com/ArcticSubmarine)"
+  ],
   "main": ".prettierrc.js",
   "browser": false,
   "repository": "github:csquare-ai/prettier-config",

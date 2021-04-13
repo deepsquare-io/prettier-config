@@ -1,6 +1,11 @@
 # Changelog
 
-## [Version 1.1.0 - Public release](https://github.com/csquare-ai/prettier-config/releases/tag/1.1.0)
+## [Version 1.1.2 - Docs](https://github.com/csquare-ai/prettier-config/releases/tag/1.1.2)
+
+- **feat**(imports): set up imports order
+- **docs**(readme): change @csquare-ai to @csquare
+
+## [Version 1.1.1 - Public release](https://github.com/csquare-ai/prettier-config/releases/tag/1.1.1)
 
 **BREAKING CHANGES**
 
