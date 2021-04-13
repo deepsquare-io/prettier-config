@@ -18,10 +18,10 @@
   "browser": false,
   "repository": "github:csquare-ai/prettier-config",
   "scripts": {
+    "prepare": "husky install",
     "test": "jest",
     "format": "prettier --write !package-lock.json **/*.{js,json,yaml,md}",
-    "format:check": "prettier --check !package-lock.json **/*.{js,json,yaml,md}",
-    "prepare": "husky install"
+    "format:check": "prettier --check !package-lock.json **/*.{js,json,yaml,md}"
   },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^2.0.2"
