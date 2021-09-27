@@ -12,28 +12,38 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup Node.js v15
+      - name: Install dependencies with pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.15.2
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '15'
-      - name: Install NPM depedencies
-        run: npm install
+          node-version: '16'
+          cache: pnpm
+      - name: Install NPM dependencies
+        run: pnpm install
       - name: Run Jest
-        run: npm run test
+        run: pnpm run test
   format:
     name: Check format with Prettier
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup Node.js v15
+      - name: Install dependencies with pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.15.2
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '15'
+          node-version: '16'
+          cache: pnpm
       - name: Install NPM dependencies
-        run: npm install
+        run: pnpm install
       - name: Run Prettier
-        run: npm run format:check
+        run: pnpm run format:check
   publish:
     name: Publish to GitHub registry
     needs: [test, format]
@@ -50,8 +60,19 @@ jobs:
             echo "Error: $GITHUB_REF does not match package.json version"
             exit 1
           fi
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies with pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.15.2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: pnpm
       - name: Install NPM dependencies
-        run: npm install
+        run: pnpm install
       - name: Publish new release
         uses: JS-DevTools/npm-publish@v1
         with:

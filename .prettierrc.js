@@ -12,6 +12,8 @@ module.exports = {
   arrowParens: 'always',
   endOfLine: 'lf',
 
+  plugins: ['node_modules/@trivago/prettier-plugin-sort-imports'],
+
   // @trivago/prettier-plugin-sort-import
   importOrder: ['^react$', '^@.*$', '^[./]'],
 };
