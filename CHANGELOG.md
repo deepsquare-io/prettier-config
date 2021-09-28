@@ -1,5 +1,11 @@
 # Changelog
 
+## [Version 1.2.0 - Prettier v2.4](https://github.com/csquare-ai/prettier-config/releases/tag/1.1.3)
+
+- **feat**(prettier): replace `jsxBracketSameLine` by `bracketSameLine` (634e7c9)
+- **chore**(workspace): replace `husky` by `simple-git-hooks`
+- **chore**(dependencies): use `pnpm` instead of `npm`
+
 ## [Version 1.1.2 - Docs](https://github.com/csquare-ai/prettier-config/releases/tag/1.1.2)
 
 - **feat**(imports): set up imports order
