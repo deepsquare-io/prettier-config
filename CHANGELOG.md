@@ -1,5 +1,11 @@
 # Changelog
 
+## [Version 1.0.2 - Plugins as peer dependencies](https://github.com/deepsquare-io/prettier-config/releases/tag/1.0.1)
+
+### Bug fixes
+
+- fix(plugins): move plugins to `peerDependencies`
+
 ## [Version 1.0.1 - Babel plugins](https://github.com/deepsquare-io/prettier-config/releases/tag/1.0.1)
 
 ### Bug fixes

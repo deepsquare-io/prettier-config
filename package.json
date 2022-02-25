@@ -1,6 +1,6 @@
 {
   "name": "@deepsquare/prettier-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The deepsquare-io enterprise-wide Prettier configuration.",
   "keywords": [
     "prettier",
@@ -28,6 +28,7 @@
     "@trivago/prettier-plugin-sort-imports": "^3.2.0"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "jest": "^27.5.1",
     "jest-json-schema": "^6.1.0",
     "lint-staged": "^12.3.4",
@@ -37,6 +38,7 @@
     "standard-commit": "^4.2.5"
   },
   "peerDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "prettier": "^2.5.1"
   },
   "engines": {
