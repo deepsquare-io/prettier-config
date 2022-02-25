@@ -1,23 +1,24 @@
-# `@csquare/prettier-config`
+# `@deepsquare/prettier-config`
 
-[csquare-ai](https://github.com/csquare-ai)'s official [Prettier](https://prettier.io) configuration.
+[deepsquare-io](https://github.com/deepsquare-io)'s official [Prettier](https://prettier.io) configuration.
 
 Proudly maintained by:
 
-- Mathieu Bour <[mathieu@csquare.ai](mailto:mathieu@csquare.ai)>
-- Clarisse Tarrou <[clarisse@csquare.ai](mailto:clarisse@csquare.ai)>
+- Mathieu Bour <[mathieu@squarefactory.io](mailto:mathieu@squarefactory.io)>
+- Clarisse Tarrou <[clarisse@squarefactory.io](mailto:clarisse@squarefactory.io)>
+- Valentin Pollart <[valentin@squarefactory.io](mailto:valentin@squarefactory.io)>
 
 ## Installation
 
 ```bash
-npm install --dev @csquare/prettier-config
+pnpm install --dev @deepsquare/prettier-config
 ```
 
 Then, ensure that your `package.json` file contains the entry:
 
 ```json
 {
-  "prettier": "@csquare/prettier-config"
+  "prettier": "@deepsquare/prettier-config"
 }
 ```
 

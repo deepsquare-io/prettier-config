@@ -1,25 +1,23 @@
 {
-  "name": "@csquare/prettier-config",
-  "version": "1.2.0",
-  "description": "The csquare-ai enterprise-wide Prettier configuration.",
+  "name": "@deepsquare/prettier-config",
+  "version": "1.0.0",
+  "description": "The deepsquare-io enterprise-wide Prettier configuration.",
   "keywords": [
     "prettier",
     "config",
     "global"
   ],
-  "homepage": "https://github.com/csquare-ai/prettier-config#readme",
-  "bugs": {
-    "url": "https://github.com/csquare-ai/prettier-config/issues",
-    "email": "mathieu@csquare.ai"
-  },
+  "homepage": "https://github.com/deepsquare-io/prettier-config#readme",
+  "bugs": "https://github.com/deepsquare-io/prettier-config/issues",
   "license": "MIT",
-  "author": "Mathieu Bour <mathieu@csquare.ai> (https://github.com/mathieu-bour)",
-  "contributors": [
-    "Clarisse Tarrou <clarisse@csquare.ai> (https://github.com/ArcticSubmarine)"
+  "maintainers": [
+    "Mathieu Bour <mathieu@squarefactory.io> (https://github.com/mathieu-bour)",
+    "Clarisse Tarrou <clarisse@squarefactory.io> (https://github.com/ArcticSubmarine)",
+    "Valentin Pollart <valentin@squarefactory.io> (https://github.com/valentinpollart)"
   ],
   "main": ".prettierrc.js",
   "browser": false,
-  "repository": "github:csquare-ai/prettier-config",
+  "repository": "github:deepsquare-io/prettier-config",
   "scripts": {
     "test": "jest",
     "format": "prettier --write '!pnpm-lock.yaml' '**/*.{js,json,yaml,md}'",
@@ -27,21 +25,21 @@
     "hooks:update": "simple-git-hooks"
   },
   "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^2.0.2"
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0"
   },
   "devDependencies": {
-    "jest": "^27.2.3",
-    "jest-json-schema": "^5.0.0",
-    "lint-staged": "^11.1.2",
+    "jest": "^27.5.1",
+    "jest-json-schema": "^6.1.0",
+    "lint-staged": "^12.3.4",
     "node-fetch": "^2.6.5",
-    "prettier": "^2.4.1",
-    "simple-git-hooks": "^2.6.1",
-    "standard-commit": "^4.0.1"
+    "prettier": "^2.5.1",
+    "simple-git-hooks": "^2.7.0",
+    "standard-commit": "^4.2.5"
   },
   "peerDependencies": {
-    "prettier": "^2.4.0"
+    "prettier": "^2.5.1"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=14"
   }
 }
