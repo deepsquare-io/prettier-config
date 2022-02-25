@@ -2,7 +2,6 @@ name: Publish on NPM registry
 on:
   push:
     branches: [main]
-    tags: ['**']
   pull_request:
     types: [opened, synchronize]
 jobs:
@@ -44,35 +43,3 @@ jobs:
         run: pnpm install
       - name: Run Prettier
         run: pnpm run format:check
-  publish:
-    name: Publish to GitHub registry
-    needs: [test, format]
-    if: startsWith(github.ref, 'refs/tags/')
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Ensure tag validity
-        run: |
-          if [ $(jq -r .version package.json) != ${GITHUB_REF/refs\/tags\//} ]; then
-            echo "Error: $GITHUB_REF does not match package.json version"
-            exit 1
-          fi
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install dependencies with pnpm
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.32.1
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-          cache: pnpm
-      - name: Install NPM dependencies
-        run: pnpm install
-      - name: Publish new release
-        uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NODE_AUTH_TOKEN }}
-          access: public
