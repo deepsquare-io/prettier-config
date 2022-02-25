@@ -1,6 +1,6 @@
 {
   "name": "@deepsquare/prettier-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The deepsquare-io enterprise-wide Prettier configuration.",
   "keywords": [
     "prettier",
@@ -23,9 +23,6 @@
     "format": "prettier --write '!pnpm-lock.yaml' '**/*.{js,json,yaml,md}'",
     "format:check": "prettier --check '!pnpm-lock.yaml' '**/*.{js,json,yaml,md}'",
     "hooks:update": "simple-git-hooks"
-  },
-  "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^3.2.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
